@@ -1,0 +1,60 @@
+.main {
+  height: 80px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 0 2rem; */
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.burgerBtn {
+  all: unset;
+  display: none;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  position: fixed;
+  background-color: white;
+  top: 80px;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenu nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 768px) {
+  .burgerBtn {
+    display: inline-block;
+  }
+  .mobileMenu {
+    display: inline-block;
+    animation: mobile-menu;
+    animation-duration: 1s;
+  }
+
+  @keyframes mobile-menu {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

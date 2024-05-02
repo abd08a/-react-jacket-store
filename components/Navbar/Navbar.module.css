@@ -1,0 +1,19 @@
+.main ul {
+  display: flex;
+}
+
+.main ul li {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.main a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 768px) {
+  .main ul {
+    display: none;
+  }
+}
